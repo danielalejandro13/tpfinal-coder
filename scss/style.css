@@ -1,0 +1,120 @@
+body {
+  background: black;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0;
+  background: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #d0803d;
+}
+
+.nav-item__loguito {
+  width: auto;
+  height: 75px;
+  margin: auto;
+  padding-right: 45px;
+}
+
+.carousel.slide {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.carousel-caption__p {
+  font-size: x-large;
+  margin-bottom: 220px;
+}
+
+.carousel-caption__h5 {
+  font-size: xx-large;
+}
+
+.carousel__img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #d0803d;
+  border-color: #d0803d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  color: white;
+}
+
+.btn:hover {
+  color: #9a530e;
+  background: white;
+  border: white;
+}
+
+.btn__txt {
+  color: white;
+}
+
+.btn__txt:hover {
+  color: #9a530e;
+  text-decoration: none;
+}
+
+.calls {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 50%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__footer {
+  color: #d0803d;
+  background: black;
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
