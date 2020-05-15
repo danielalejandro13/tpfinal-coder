@@ -13,24 +13,45 @@ body {
 }
 
 .nav {
-  width: 100%;
-  margin-top: 0;
-  background: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
 }
 
-.nav-link {
+.dropdown-item {
+  background: black;
   color: white;
 }
 
+.dropdown-menu {
+  background: black;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: #D15B30;
+  color: white;
+}
+
+.navbar-toggler {
+  background: #D15B30;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white !important;
+}
+
 .nav-link:hover {
-  color: #d0803d;
+  color: #D15B30 !important;
 }
 
 .nav-item__loguito {
@@ -42,18 +63,18 @@ body {
 
 h2 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
 h1 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
 h3 {
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
@@ -83,7 +104,7 @@ h3 {
 .contenedor__preguntas__txt {
   color: white;
   font-size: larger;
-  text-align: justify;
+  text-align: left;
   margin: auto;
 }
 
@@ -114,6 +135,22 @@ h3 {
   justify-items: center;
 }
 
+@media all and (max-width: 900px) {
+  .container__cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .container__cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
 .container__cards2 {
   margin: auto;
   margin-top: 50px;
@@ -128,9 +165,25 @@ h3 {
   justify-items: center;
 }
 
+@media all and (max-width: 900px) {
+  .container__cards2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .container__cards2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
 .btn {
-  background: #d0803d;
-  border: #d0803d;
+  background: #D15B30;
+  border: #D15B30;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,14 +196,14 @@ h3 {
 }
 
 .btn:hover {
-  background: orangered;
-  border-color: white;
-  color: #d0803d;
+  background: #D98E73;
+  border-color: #D98E73;
+  color: #52352B;
   text-decoration: none;
 }
 
 .contenedor__footer {
-  color: #d0803d;
+  color: #D15B30;
   background: black;
   text-align: center;
   -ms-flex-item-align: end;

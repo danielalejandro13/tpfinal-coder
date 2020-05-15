@@ -1,4 +1,4 @@
-$naranja: #d0803d;
+$naranja: #D15B30;
 
 body{
     background: black;
@@ -9,20 +9,41 @@ body{
 }
 
 .nav{
-    width: 100%;
-    margin-top: 0;
-    background: black;
-    justify-content: center;
-    padding: 5px;    
+    margin: auto;
     align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
-.nav-link{
+.dropdown-item{
+    background: black;
+    color: white;    
+}
+
+.dropdown-menu{
+    background: black;
     color: white;
 }
 
+.dropdown-item:hover{
+    background:$naranja;
+    color: white;
+}
+
+.navbar-toggler{
+    background: $naranja; 
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white !important;
+}
+
 .nav-link:hover{
-    color: $naranja;
+    color: $naranja !important;
 }
 
  .nav-item__loguito{
@@ -67,7 +88,7 @@ h3{
 .contenedor__preguntas__txt{
      color: white;
      font-size: larger;
-     text-align: justify;
+     text-align: left; ;
      margin: auto;
 }
 
@@ -93,6 +114,19 @@ h3{
     justify-items: center;
 }
 
+@media all and (max-width: 900px){
+    .container__cards {
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 10px;
+   }
+   }
+   @media all and (max-width: 700px){
+    .container__cards{
+     grid-template-columns: 1fr;
+     grid-gap: 10px;
+   }
+   }
+
 .container__cards2{
     margin: auto;
     margin-top: 50px;
@@ -104,6 +138,18 @@ h3{
     background: none;
     justify-items: center;
 }
+@media all and (max-width: 900px){
+    .container__cards2 {
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 10px;
+   }
+   }
+   @media all and (max-width: 700px){
+    .container__cards2{
+     grid-template-columns: 1fr;
+     grid-gap: 10px;
+   }
+   }
 
 
 .btn{
@@ -117,9 +163,9 @@ h3{
 }
 
 .btn:hover{
-    background: orangered;
-    border-color: white;
-    color: $naranja;
+    background: #D98E73;
+    border-color: #D98E73;
+    color: #52352B;
     text-decoration: none;
 }
 

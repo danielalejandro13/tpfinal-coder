@@ -6,24 +6,45 @@ body {
 }
 
 .nav {
-  width: 100%;
-  margin-top: 0;
-  background: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
 }
 
-.nav-link {
+.dropdown-item {
+  background: black;
   color: white;
 }
 
+.dropdown-menu {
+  background: black;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: #D15B30;
+  color: white;
+}
+
+.navbar-toggler {
+  background: #D15B30;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white !important;
+}
+
 .nav-link:hover {
-  color: #d0803d;
+  color: #D15B30 !important;
 }
 
 .nav-item__loguito {
@@ -35,19 +56,19 @@ body {
 
 h2 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
 h1 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
 h3 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
   font-size: larger;
 }
@@ -68,7 +89,13 @@ h3 {
 .contenedor__adopciones .contenedor__adopciones__texto {
   font-size: larger;
   color: white;
-  text-align: justify;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor__adopciones .contenedor__adopciones__texto {
+    font-size: medium;
+  }
 }
 
 .contenedor__adopciones__texto2 {
@@ -76,7 +103,13 @@ h3 {
   color: white;
   list-style-type: disc;
   margin: 5px;
-  text-align: justify;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor__adopciones__texto2 {
+    font-size: medium;
+  }
 }
 
 .contenedor__adopciones__texto3 {
@@ -84,12 +117,18 @@ h3 {
   color: white;
   list-style-type: decimal;
   margin: 5px;
-  text-align: justify;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor__adopciones__texto3 {
+    font-size: medium;
+  }
 }
 
 .btn {
-  background: #d0803d;
-  border: #d0803d;
+  background: #D15B30;
+  border: #D15B30;
   padding: 15px;
   color: white;
   display: -webkit-box;
@@ -102,14 +141,14 @@ h3 {
 }
 
 .btn:hover {
-  background: white;
-  border-color: white;
-  color: #d0803d;
+  background: #D98E73;
+  border-color: #D98E73;
+  color: #52352B;
   text-decoration: none;
 }
 
 .contenedor__footer {
-  color: #d0803d;
+  color: #D15B30;
   background: black;
   text-align: center;
   -ms-flex-item-align: end;

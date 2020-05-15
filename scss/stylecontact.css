@@ -6,24 +6,45 @@ body {
 }
 
 .nav {
-  width: 100%;
-  margin-top: 0;
-  background: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
 }
 
-.nav-link {
+.dropdown-item {
+  background: black;
   color: white;
 }
 
+.dropdown-menu {
+  background: black;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: #D15B30;
+  color: white;
+}
+
+.navbar-toggler {
+  background: #D15B30;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white !important;
+}
+
 .nav-link:hover {
-  color: #d0803d;
+  color: #D15B30 !important;
 }
 
 .nav-item__loguito {
@@ -35,7 +56,7 @@ body {
 
 h1 {
   margin-top: 50px;
-  color: #d0803d;
+  color: #D15B30;
   text-align: center;
 }
 
@@ -44,9 +65,6 @@ h1 {
   width: 70%;
   height: auto;
   border-radius: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
   padding: 10px;
   -webkit-box-sizing: border-box;
@@ -56,16 +74,35 @@ h1 {
 
 .container__form__row {
   width: auto;
-  margin: auto;
+  height: auto;
+}
+
+@media all and (max-width: 850px) {
+  .container__form__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .container__form__row {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .btn {
-  background: black;
-  margin-left: -35%;
+  background: #D15B30;
+  border: #D15B30;
+  margin: auto;
 }
 
 .btn:hover {
-  background: #d0803d;
+  background: #D98E73;
+  border: #D98E73;
+  color: #52352B;
 }
 
 .form-group {
@@ -73,7 +110,7 @@ h1 {
 }
 
 .contenedor__footer {
-  color: #d0803d;
+  color: #D15B30;
   background: black;
   text-align: center;
   -ms-flex-item-align: end;
@@ -88,7 +125,7 @@ h1 {
 .social-bar {
   position: fixed;
   right: 15%;
-  top: 35%;
+  top: 45%;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;

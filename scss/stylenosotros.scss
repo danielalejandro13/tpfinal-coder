@@ -1,4 +1,4 @@
-$naranja: #d0803d;
+$naranja: #D15B30;
 
 body{
     background: black;
@@ -7,20 +7,41 @@ body{
 }
 
 .nav{
-    width: 100%;
-    margin-top: 0;
-    background: black;
-    justify-content: center;
-    padding: 5px;    
+    margin: auto;
     align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
-.nav-link{
+.dropdown-item{
+    background: black;
+    color: white;    
+}
+
+.dropdown-menu{
+    background: black;
     color: white;
 }
 
+.dropdown-item:hover{
+    background:$naranja;
+    color: white;
+}
+
+.navbar-toggler{
+    background: $naranja; 
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white !important;
+}
+
 .nav-link:hover{
-    color: $naranja;
+    color: $naranja !important;
 }
 
  .nav-item__loguito{
@@ -39,28 +60,37 @@ body{
     padding: 10px;
     box-sizing: border-box;
     display: flex;
-    justify-content: justify;
+    justify-content: left;
+    @media screen and (max-width: 540px){
+        font-size: medium;
+    }
 }
 
 .contenedor__texto__p2{
     color: white;
     font-size: larger;
-    text-align: justify;
+    text-align: left;
+    @media screen and (max-width: 540px){
+        font-size: medium;
+    }
 }
 
 .contenedor__texto__p1{
     color: white;
     font-size: larger;
-    text-align: justify;
+    text-align: left;
+    @media screen and (max-width: 540px){
+        font-size: medium;
+    }
 }
 .contenedor__texto__p{
     color: white;
     font-size: larger;
-    text-align: justify;
+    text-align: left;
 
 
     @media screen and (max-width: 540px){
-        font-size: 12px;
+        font-size: medium;
 
 }
 }

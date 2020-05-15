@@ -1,4 +1,4 @@
-$naranja: #d0803d;
+$naranja: #D15B30;
 
 body{
     background: black;
@@ -7,20 +7,41 @@ body{
 }
 
 .nav{
-    width: 100%;
-    margin-top: 0;
-    background: black;
-    justify-content: center;
-    padding: 5px;    
+    margin: auto;
     align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
-.nav-link{
+.dropdown-item{
+    background: black;
+    color: white;    
+}
+
+.dropdown-menu{
+    background: black;
     color: white;
 }
 
+.dropdown-item:hover{
+    background:$naranja;
+    color: white;
+}
+
+.navbar-toggler{
+    background: $naranja; 
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white !important;
+}
+
 .nav-link:hover{
-    color: $naranja;
+    color: $naranja !important;
 }
 
  .nav-item__loguito{
@@ -43,7 +64,6 @@ h1{
     width: 70%;
     height: auto;
     border-radius: 5px;
-    justify-content: center;
     margin: auto;
     padding: 10px;
     box-sizing: border-box;
@@ -52,16 +72,30 @@ h1{
 
 .container__form__row{
     width: auto;
+    height: auto;
+}
+
+@media all and (max-width: 850px){
+    .container__form__row {
+     justify-content: center;;
+   }
+   }
+   @media all and (max-width: 650px){
+    .container__form__row{
+     justify-content: left;
+   }
+   }
+
+.btn{
+    background: $naranja;
+    border: $naranja;
     margin: auto;
 }
 
-.btn{
-    background: black;
-    margin-left: -35%;
-}
-
 .btn:hover{
-    background: $naranja;
+    background: #D98E73;
+    border: #D98E73;
+    color: #52352B;
 }
 
 .form-group{
@@ -82,7 +116,7 @@ h1{
 .social-bar{
     position: fixed;
     right: 15%;
-    top: 35%;
+    top: 45%;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;

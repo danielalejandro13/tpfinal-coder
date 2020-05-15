@@ -14,10 +14,18 @@
 
 <body>
     <header>
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link"><img class="nav-item__loguito" src="img/logo1.png" alt=""></a>
-              </li>
+      <nav class="navbar navbar-expand-lg">
+        <li class="nav-item">
+          <a class="nav-link"><img class="nav-item__loguito" src="img/logo1.png" alt="callejeritos villa elisa logo" href="index.html"></a>
+        </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -25,18 +33,26 @@
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="salvavidas.html">Salvá vidas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="adopciones.html">Adopciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="donaciones.html">Dona $50</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
+              <a class="nav-link" href="salvavidas.html">Salvá vidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adopciones.html">Adopciones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Donaciones</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="http://bit.ly/3bmrr0G" target="_blank">Doná $50</a>
+                <a class="dropdown-item" href="http://bit.ly/2SrOxud" target="_blank">Doná $200</a>
+                <a class="dropdown-item" href="http://bit.ly/31AwnuD" target="_blank">Doná $1000</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
           </ul>
+        </div>
+       </nav>
     </header>
      
     <!-- Acá arranca el texto y todo eso, algunas fotos... -->

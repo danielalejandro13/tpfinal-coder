@@ -6,34 +6,53 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+
+  $naranja: #D25A30;
   
-  .nav {
-    width: 100%;
+  .nav{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     margin-top: 0;
+}
+
+.dropdown-item{
     background: black;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 5px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .nav-link {
+    color: white;    
+}
+
+.dropdown-menu{
+    background: black;
     color: white;
-  }
-  
-  .nav-link:hover {
-    color: #d0803d;
-  }
-  
-  .nav-item__loguito {
+}
+
+.dropdown-item:hover{
+    background:$naranja;
+    color: white;
+}
+
+.navbar-toggler{
+    background: $naranja; 
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: $naranja !important;
+}
+
+ .nav-item__loguito{
     width: auto;
     height: 75px;
     margin: auto;
-    padding-right: 45px;
-  }
+    padding-right: 45px; 
+}
   
  .body__404{
     margin: 5% 5%;
@@ -46,18 +65,18 @@ body {
 .body__404__p{
     font-size: xx-large;
     text-align: center;
-    color: #d0803d;
+    color: $naranja;
 }
 
 .body__404__p1{
     font-size: larger;
     text-align: center;
-    color: #d0803d;
+    color: $naranja;
 }
  
   
   .contenedor__footer {
-    color: #d0803d;
+    color: $naranja;
     background: black;
     text-align: center;
     -ms-flex-item-align: end;
