@@ -75,7 +75,7 @@ body {
   }
 
 .contenedor__donaciones{
-  width: 75%;
+  width: 70%; 
   max-width: 90%;
   border-radius: 3px;
   margin: auto;
@@ -84,9 +84,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: none;
-  background: pink;
+  background:pink;
+
 }
-@media all and (max-width: 850px){
+@media all and (max-width: 950px){
   .contenedor__donaciones {
    grid-template-columns: 1fr;
    grid-gap: 10px;
@@ -105,9 +106,9 @@ body {
   width: 500px;
   height: auto;
 }
-@media all and (max-width: 850px){
+@media all and (max-width: 950px){
   .contenedor__mercadopago {
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
  }
  }
  @media all and (max-width: 700px){
@@ -121,7 +122,7 @@ body {
   width: 500px;
   height: auto;
 }
-@media all and (max-width: 850px){
+@media all and (max-width: 950px){
   .contenedor__transferencia {
    grid-template-columns: 1fr;
  }
@@ -175,15 +176,15 @@ body {
   align-items: center;
   justify-items: center;
 }
-@media all and (max-width: 850px){
+@media all and (max-width: 950px){
   .botones__mercadopago {
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr ;
    grid-gap: 5px;
  }
  }
  @media all and (max-width: 700px){
   .botones__mercadopago{
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr ;
    grid-gap: 5px;
  }
 }
