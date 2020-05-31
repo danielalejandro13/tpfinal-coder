@@ -1,89 +1,91 @@
-body {
-    background: url(../img/backgroundcat.png); 
+
+  $naranja: #D15B30;
+  $amarillo: #D6A309;
+  $gris: #424241;
+  $blanco: #FFFFFF;
+  
+  body {
+    // background: url(../img/backgroundcat.png);
+    background-color: $gris;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
-
-  $naranja: #D25A30;
   
-  .nav{
+  .nav {
     margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0;
-}
-
-.dropdown-item{
-    background: black;
-    color: white;    
-}
-
-.dropdown-menu{
-    background: black;
-    color: white;
-}
-
-.dropdown-item:hover{
-    background:$naranja;
-    color: white;
-}
-
-.navbar-toggler{
-    background: $naranja; 
-}
-
-.nav-item{
+  }
+  
+  .navbar {
+    background: #D6A309;
+  }
+  
+  .navbar-toggler {
+    background: $naranja;
+  }
+  
+  .nav-item {
     cursor: pointer;
-}
-
-.nav-link{
+  }
+  
+  .nav-link {
     color: white !important;
-}
-
-.nav-link:hover{
-    color: $naranja !important;
-}
-
- .nav-item__loguito{
+  
+    &:hover {
+      color: $naranja !important;
+    }
+  }
+  
+  .nav-item__loguito {
     width: auto;
     height: 75px;
     margin: auto;
-    padding-right: 45px; 
-}
+    padding-right: 45px;
+  }
   
- .body__404{
+  .body__404 {
     margin: 5% 5%;
     width: 90%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
- }    
-
-.body__404__p{
+  }
+  
+  .body__404__p {
     font-size: xx-large;
     text-align: center;
     color: $naranja;
-}
-
-.body__404__p1{
+  }
+  
+  .body__404__p1 {
     font-size: larger;
     text-align: center;
     color: $naranja;
-}
- 
-  
+  }
+
   .contenedor__footer {
-    color: $naranja;
-    background: black;
+    color: white;
+    background: $amarillo;
     text-align: center;
     -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     width: 100%;
     height: 50px;
     padding-top: 10px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }

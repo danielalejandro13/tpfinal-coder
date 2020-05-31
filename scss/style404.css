@@ -1,5 +1,5 @@
 body {
-  background: url(../img/backgroundcat.png);
+  background-color: #424241;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -10,31 +10,20 @@ body {
 .nav {
   margin: auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 0;
 }
 
-.dropdown-item {
-  background: black;
-  color: white;
-}
-
-.dropdown-menu {
-  background: black;
-  color: white;
-}
-
-.dropdown-item:hover {
-  background: #D25A30;
-  color: white;
+.navbar {
+  background: #D6A309;
 }
 
 .navbar-toggler {
-  background: #D25A30;
+  background: #D15B30;
 }
 
 .nav-item {
@@ -46,7 +35,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #D25A30 !important;
+  color: #D15B30 !important;
 }
 
 .nav-item__loguito {
@@ -65,25 +54,25 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .body__404__p {
   font-size: xx-large;
   text-align: center;
-  color: #D25A30;
+  color: #D15B30;
 }
 
 .body__404__p1 {
   font-size: larger;
   text-align: center;
-  color: #D25A30;
+  color: #D15B30;
 }
 
 .contenedor__footer {
-  color: #D25A30;
-  background: black;
+  color: white;
+  background: #D6A309;
   text-align: center;
   -ms-flex-item-align: end;
   align-self: flex-end;

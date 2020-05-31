@@ -1,226 +1,251 @@
-$naranja: #D25A30;
 
-body{
-    background: black;
+  $naranja: #D15B30;
+  $amarillo: #D6A309;
+  $gris: #424241;
+  $blanco: #FFFFFF;
+
+  body {
+    background: $gris;
     min-height: 100vh;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-h3{
+  }
+  
+  h3 {
     text-align: center;
     color: $naranja;
     margin-bottom: 20px;
-}
-
-.nav{
+  }
+  
+  .nav {
     margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0;
-}
-
-.dropdown-item{
-    background: black;
-    color: white;    
-}
-
-.dropdown-menu{
-    background: black;
-    color: white;
-}
-
-.dropdown-item:hover{
-    background:$naranja;
-    color: white;
-}
-
-.navbar-toggler{
-    background: $naranja; 
-}
-
-.nav-item{
+  }
+  
+  .navbar {
+    background: $amarillo;
+  }
+  
+  .navbar-toggler {
+    background: $naranja;
+  }
+  
+  .nav-item {
     cursor: pointer;
-}
-
-.nav-link{
+  }
+  
+  .nav-link {
     color: white !important;
-}
-
-.nav-link:hover{
-    color: $naranja !important;
-}
-
- .nav-item__loguito{
+  
+    &:hover {
+      color: $naranja !important;
+    }
+  }
+  
+  .nav-item__loguito {
     width: auto;
     height: 75px;
     margin: auto;
-    padding-right: 45px; 
-}
-
-// ACÁ PUSE MARG--LEF PERO NO ES LA IDEA ME PARECE, TIENE QUE QUEDAR CENTRADO
-
-.carousel{
-    border-radius: 5px;
-    width: 90%;
-    height: auto;
-    margin: auto;
-}
-
-.slide{
-    border-radius: 5px;
-    width: 90%;
-    height: auto;
-    margin: auto;
-}
-
-.carousel-caption__p{
-    font-size: x-large;
-    margin-bottom: none;
-    @media screen and (max-width: 770px){
-        font-size: large;
-      }
-    }
-    
-
-.carousel-caption__h5{
-    font-size: xx-large;
-
-@media screen and (max-width: 770px){
-    font-size: large;
+    padding-right: 45px;
   }
-}
-
-.carousel__img {
-    width: 100%;
-    height: auto; 
+  
+  .carousel {
     border-radius: 5px;
-}
-
-.calls{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: $gris;
+  }
+  
+  .slide {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .carousel-caption__p {
+    font-size: 45px;
+    margin-bottom: none;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .carousel-caption__p {
+      font-size: large;
+    }
+  }
+  
+  .carousel-caption__h5 {
+    font-size: 70px;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .carousel-caption__h5 {
+      font-size: large;
+    }
+  }
+  
+  .carousel__img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .container_actions {
+    background: $gris;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  
+  .calls {
     margin: auto;
     margin-top: 25px;
     margin-bottom: 50px;
     width: 70%;
     height: auto;
-    background: none;
+    background-color: none;
     justify-items: center;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-}
-@media all and (max-width: 1000px){
+  }
+  
+  @media all and (max-width: 1000px) {
     .calls {
-     grid-template-columns: 1fr;
-     grid-gap: 5px;
-   }
-   }
-   @media all and (max-width: 650px){
-    .calls{
-     grid-template-columns: 1fr;
-     grid-gap:5px;
-   }
-   }
-
-.container__cards{
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+  }
+  
+  .container__cards {
     background: none;
     margin: auto;
-    padding: 5px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
-}
-
-@media all and (max-width: 1000px){
+  }
+  
+  @media all and (max-width: 1000px) {
     .container__cards {
-     grid-template-columns: 1fr;
-     grid-gap: 5px;
-   }
-   }
-   @media all and (max-width: 650px){
-    .container__cards{
-     grid-template-columns: 1fr;
-     grid-gap:5px;
-   }
-   }
-
-.container__buttons{
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+  }
+  
+  @media all and (max-width: 650px) {
+    .container__cards {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+  }
+  
+  .container__buttons {
     background: white;
     margin: auto;
     height: auto;
     width: auto;
     border-radius: 5px;
     padding: 35px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
-}
-
-video{
+  }
+  
+  video {
     background: white;
     border-radius: 5px;
     padding: 5px;
-}
-
-.btn{
+  }
+  
+  .btn {
     background: $naranja;
     border: $naranja;
     text-decoration: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 20px;
-}
-
-.btn:hover{
-    background: #D98E73;
-    border-color: #D98E73;
-    color: #52352B;
-}
-
-.btn__txt{
+  
+    &:hover {
+      background: #D98E73;
+      border-color: #D98E73;
+      color: #52352B;
+    }
+  }
+  
+  .btn__txt {
     color: white;
-}
-
-.btn__txt:hover{
-     text-decoration: none;
-     color: #52352B;
-}
-
-.container__reencuentros{
+  
+    &:hover {
+      text-decoration: none;
+      color: #52352B;
+    }
+  }
+  
+  .container__reencuentros {
     background: none;
     width: 70%;
     height: auto;
     margin: auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     justify-items: center;
-}
-
-@media all and (max-width: 1000px){
+  }
+  
+  @media all and (max-width: 1000px) {
     .container__reencuentros {
-     grid-template-columns: 1fr;
-     grid-gap: 5px;
-   }
-   }
-   @media all and (max-width: 650px){
-    .container__reencuentros{
-     grid-template-columns: 1fr;
-     grid-gap:5px;
-   }
-   }
-
-.contenedor__footer{
-    color: $naranja;
-    background: black;
-    text-align: center;;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+  }
+  
+  @media all and (max-width: 650px) {
+    .container__reencuentros {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+  }
+  
+  .contenedor__footer {
+    color: white;
+    background: $amarillo;
+    text-align: center;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     width: 100%;
     height: 50px;
     padding-top: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
+  }
 
 
 

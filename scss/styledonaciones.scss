@@ -1,103 +1,104 @@
+$naranja: #D15B30;
+$amarillo: #D6A309;
+$gris: #424241;
+$blanco: #FFFFFF;
+
 body {
-    background: black;
-    min-height: 100vh;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-  }
-
-  $naranja: #D25A30;
-  
-  .nav{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
+  background: $gris;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.dropdown-item{
-    background: black;
-    color: white;    
+.nav {
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 0;
 }
 
-.dropdown-menu{
-    background: black;
-    color: white;
+.navbar {
+  background: $amarillo;
 }
 
-.dropdown-item:hover{
-    background:$naranja;
-    color: white;
+.nav-item {
+  cursor: pointer;
 }
 
-.navbar-toggler{
-    background: $naranja; 
-}
+.nav-link {
+  color: white !important;
 
-.nav-item{
-    cursor: pointer;
-}
-
-.nav-link{
-    color: white !important;
-}
-
-.nav-link:hover{
+  &:hover {
     color: $naranja !important;
+  }
 }
 
- .nav-item__loguito{
-    width: auto;
-    height: 75px;
-    margin: auto;
-    padding-right: 45px; 
+.nav-item__loguito {
+  width: auto;
+  height: 75px;
+  margin: auto;
+  padding-right: 45px;
 }
- 
-  h1{
-      margin-top: 50px;
-      color: $naranja;
-      text-align: center;
-  }
 
-  h2 {
-    margin-bottom: 30px;
-    color: $naranja;
-    text-align: center;
-  }
-  h3 {
-    margin-bottom: 10px;
-    color: $naranja;
-    text-align: center;
-  }
-  h4{
-    color: $naranja;
-    margin-bottom: 25px;
-  }
-  
+h1 {
+  margin-top: 50px;
+  color: $naranja;
+  text-align: center;
+}
 
-.contenedor__donaciones{
-  width: 70%; 
+h2 {
+  margin-bottom: 30px;
+  color: $naranja;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: $naranja;
+  text-align: center;
+}
+
+h4 {
+  color: $naranja;
+  margin-bottom: 25px;
+}
+
+.contenedor__donaciones {
+  width: 70%;
   max-width: 90%;
   border-radius: 3px;
   margin: auto;
   text-align: center;
   justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: none;
   background: none;
+  padding-bottom: 25px;
 }
+
 @media screen and (min-width: 350px) and (max-width: 800px) {
   .contenedor__donaciones {
-   grid-template-columns: 1fr;
-   grid-gap: 10px;
- }
- }
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
 
-
-.contenedor__mercadopago{
+.contenedor__mercadopago, .contenedor__transferencia {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   display: block;
   background: whitesmoke;
@@ -105,29 +106,25 @@ body {
   width: 500px;
   height: auto;
 }
+
 @media screen and (min-width: 350px) and (max-width: 800px) {
-  .contenedor__mercadopago .logo__mercadopago{
+  .contenedor__mercadopago .logo__mercadopago {
     width: 50%;
-   grid-template-columns: 1fr;
-   grid-gap: 10px;
- }
- }
-.contenedor__transferencia{
-  justify-content: center;
-  display: block;
-  background: whitesmoke;
-  border-radius: 5px;
-  width: 500px;
-  height: auto;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }
+
 @media screen and (min-width: 350px) and (max-width: 800px) {
-  .contenedor__transferencia .transfer__linea1 .transfer__linea2 .transfer__linea3 .transfer__linea4{
+  .contenedor__transferencia .transfer__linea1 .transfer__linea2 .transfer__linea3 .transfer__linea4 {
     width: 50%;
-   grid-template-columns: 1fr;
-   grid-gap: 10px;
- }
- }
-  
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
 .contenedor__donaciones > div {
   display: block;
   padding: 20px;
@@ -135,92 +132,101 @@ body {
   max-width: 90%;
 }
 
-.logo__banco{
+.logo__banco {
   width: 200px;
   height: 120px;
-} 
+}
 
-.btn{
+.btn {
   color: white;
   background: $naranja;
   border-color: $naranja;
+  display: -ms-grid;
   display: grid;
   text-decoration: none !important;
   padding: 15px;
+
+  &:hover {
+    color: #52352B;
+    background: #D98E73;
+    border: #D98E73;
+    text-decoration: none;
+  }
 }
 
-.btn:hover{
-  color:#52352B;
-  background: #D98E73;
-  border: #D98E73;
+.a {
+  &:hover {
+    text-decoration: none;
+  }
+
   text-decoration: none;
 }
 
-.a:hover{
-  text-decoration: none;
-}
-
-.a{
-  text-decoration: none;
-}
-
-.botones__mercadopago{
+.botones__mercadopago {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
 }
-@media all and (max-width: 950px){
+
+@media all and (max-width: 950px) {
   .botones__mercadopago {
-   grid-template-columns: 1fr 1fr ;
-   grid-gap: 5px;
- }
- }
- @media all and (max-width: 700px){
-  .botones__mercadopago{
-   grid-template-columns: 1fr ;
-   grid-gap: 5px;
- }
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
 }
 
-.contenedor__textodonaciones{
+@media all and (max-width: 700px) {
+  .botones__mercadopago {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+}
+
+.contenedor__textodonaciones {
   margin: 15px auto;
   color: white;
   width: 75%;
   padding: 15px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   font-size: large;
 }
 
-.logo__mercadopago{
+.logo__mercadopago {
   margin-top: -70px;
 }
 
-.logo__banco{
+.logo__banco {
   margin-top: -10px;
 }
- 
-.texto__banco{
+
+.texto__banco {
   line-height: 0.5;
   margin-top: 25px;
 }
 
-.botones__mercadopago{
+.botones__mercadopago {
   margin-top: -30px;
 }
 
 .contenedor__footer {
-    color: $naranja;
-    background: black;
-    text-align: center;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: 100%;
-    height: 50px;
-    padding-top: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  /*# sourceMappingURL=styleadopciones.css.map */
+  color: white;
+  background: $amarillo;
+  text-align: center;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
